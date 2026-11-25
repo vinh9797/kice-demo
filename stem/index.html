@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>KICE STEM Assessment - Le Thuy High School</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app-container">
+<!-- MÀN HÌNH 1: PHÒNG THI KICE (TIẾNG VIỆT) -->
+<div id="exam-screen">
+<div class="header">
+<div class="header-title">KICE STEM TEST • THPT Lệ Thủy</div>
+<div class="timer-badge" id="timer">10:00</div>
+</div>
+<div class="anti-cheat-bar">
+<span>🔒 Bảo mật PIPA & Khóa chuyển Tab</span>
+<span>Vi phạm: <span class="cheat-count" id="tab-warnings">0</span> lần</span>
+</div>
+<div class="content">
+<div id="questions-container"></div>
+<button class="btn-primary" id="btn-submit">NỘP BÀI & XUẤT KẾT QUẢ HÀN QUỐC</button>
+</div>
+</div>
+<!-- MÀN HÌNH 2: DASHBOARD GIÁO SƯ (TIẾNG HÀN) -->
+<div id="result-screen" class="hidden">
+<div class="header">
+<div class="header-title">KICE 역량검증 리포트 (교수용)</div>
+<button class="btn-reset" id="btn-reset">재시험</button>
+</div>
+<div class="content">
+<div class="ko-card">
+<strong>[산학협력단 수의계약 감사 대응용 공식 데이터]</strong><br>
+• 선발 고교: 베트남 꽝빈성 레투이(Le Thuy) 명문고교<br>
+• 검증 기준: 한국 교육과정평가원(KICE) 수능 수리·과학 유형<br>
+• 보안 준수: AWS 서울 리전 암호화 및 PIPA 개인정보 보호 기준
+</div>
+<h4 class="section-title">🏆 STEM 탑10 선발 순위 (수학 점수 및 조기 제출 우선)</h4>
+<table>
+<thead>
+<tr>
+<th>순위</th>
+<th>성명 (현지석차)</th>
+<th>수리/물리<br>(KICE환산)</th>
+<th>이탈로그</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody id="ranking-body"></tbody>
+</table>
+<button class="btn-export" id="btn-export">📄 산학협력단 제출용 검증 성적표 다운로드</button>
+</div>
+</div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
